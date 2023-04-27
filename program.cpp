@@ -1,5 +1,6 @@
 #include "graphics.h"
 #include "picture.hpp"
+
 void treug_fence(int x,int y,int a){
     int v[]={x,y,x+a/2,y-a/2,x+a,y};
     setcolor(BROWN);
@@ -22,12 +23,12 @@ void fence(){
     bar(0, 425, 1280, 433);
 }
 
-int main()
-{ initwindow(800,600);
- house(); // дом
- sun(); // солнце
- man(); // человек
- fence(); // забор
- getch();
- closegraph();
+int main(){ 
+    initwindow(800,600);
+    house(); // дом
+    sun(); // солнце
+    man(); // человек
+    fence(); // забор
+    getch();
+    closegraph();
 }
